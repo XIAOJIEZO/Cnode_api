@@ -1,0 +1,35 @@
+{
+	"list" : [
+    [{
+	"pageNo": 1,
+	"minPriceE2": "0",
+	"countryId": 0,
+	"cityId": 0
+	}, 0, "", "输入合法参数"
+	],
+
+    [{
+	"pageNo": "",
+	"minPriceE2": "0",
+	"countryId": 0,
+	"cityId": 0
+	}, 1000003 , {"code": 0, "message": "成功", "data": {"list": [], "total": 0}, "time": 1601190528}, "pageNo为空"
+	],
+
+    [{
+	"pageNo": 1,
+	"minPriceE2": "0",
+	"countryId": 99,
+	"cityId": 0
+	},
+		0, {"code": 0, "message": "成功", "data": {"list": [], "total": 0}, "time": 1601190528}, "countryId=99"]
+	],
+
+
+	"order": [
+		[
+			{},
+			0, {"code": 0, "message": "成功", "data": {"list": [], "total": 0}, "time": 1601190528}, "输入合法参数"
+		]
+	]
+}

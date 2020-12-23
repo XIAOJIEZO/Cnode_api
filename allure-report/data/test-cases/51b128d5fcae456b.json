@@ -1,0 +1,179 @@
+{
+  "uid" : "51b128d5fcae456b",
+  "name" : "countryId=99",
+  "fullName" : "testcases.test_estate.test_estate.Test_estate#test_estate_list",
+  "historyId" : "473844dbbdff86c3ac73596065509cf3",
+  "time" : {
+    "start" : 1604636100929,
+    "stop" : 1604636100961,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1604636100844,
+      "stop" : 1604636100929,
+      "duration" : 85
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3afd8b0eccbb2044",
+      "name" : "log",
+      "source" : "3afd8b0eccbb2044.txt",
+      "type" : "text/plain",
+      "size" : 1311
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试estate"
+  }, {
+    "name" : "story",
+    "value" : "房产列表"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_estate"
+  }, {
+    "name" : "suite",
+    "value" : "test_estate"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_estate"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9OHEJC6"
+  }, {
+    "name" : "thread",
+    "value" : "5516-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_estate.test_estate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "code",
+    "value" : "0"
+  }, {
+    "name" : "description",
+    "value" : "'countryId=99'"
+  }, {
+    "name" : "req",
+    "value" : "{'pageNo': 1, 'minPriceE2': '0', 'countryId': 99, 'cityId': 0}"
+  }, {
+    "name" : "res",
+    "value" : "{'code': 0, 'message': '成功', 'data': {'list': [], 'total': 0}, 'time': 1601190528}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "e6ce793ffd8cd9a5",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/131/allure/#testresult/e6ce793ffd8cd9a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603275305732,
+          "stop" : 1603275305748,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "997e6886a7d09014",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/130/allure/#testresult/997e6886a7d09014",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603273910992,
+          "stop" : 1603273911008,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "78485d9bb8343ee3",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/125/allure/#testresult/78485d9bb8343ee3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601366162107,
+          "stop" : 1601366162122,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "1dd20d5283a25417",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/124/allure/#testresult/1dd20d5283a25417",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601279238168,
+          "stop" : 1601279238184,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "614dd7fbc14a0550",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/121/allure/#testresult/614dd7fbc14a0550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601276472560,
+          "stop" : 1601276472575,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "a2f13d205d82342a",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/118/allure/#testresult/a2f13d205d82342a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601276050292,
+          "stop" : 1601276050306,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "d1e0b898dbf3ff3f",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/117/allure/#testresult/d1e0b898dbf3ff3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601275977333,
+          "stop" : 1601275977347,
+          "duration" : 14
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "51b128d5fcae456b.json",
+  "parameterValues" : [ "0", "'countryId=99'", "{'pageNo': 1, 'minPriceE2': '0', 'countryId': 99, 'cityId': 0}", "{'code': 0, 'message': '成功', 'data': {'list': [], 'total': 0}, 'time': 1601190528}" ]
+}

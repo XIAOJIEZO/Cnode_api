@@ -1,0 +1,179 @@
+{
+  "uid" : "e9f384f8d5a86ef",
+  "name" : "输入合法参数",
+  "fullName" : "testcases.test_estate.test_estate.Test_estate#test_estate_list",
+  "historyId" : "17820948b16b80565cd02b8c18d7d214",
+  "time" : {
+    "start" : 1604636098909,
+    "stop" : 1604636100520,
+    "duration" : 1611
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1604636098808,
+      "stop" : 1604636098908,
+      "duration" : 100
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4bbce68876a05447",
+      "name" : "log",
+      "source" : "4bbce68876a05447.txt",
+      "type" : "text/plain",
+      "size" : 16558
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试estate"
+  }, {
+    "name" : "story",
+    "value" : "房产列表"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_estate"
+  }, {
+    "name" : "suite",
+    "value" : "test_estate"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_estate"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9OHEJC6"
+  }, {
+    "name" : "thread",
+    "value" : "5516-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_estate.test_estate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "code",
+    "value" : "0"
+  }, {
+    "name" : "description",
+    "value" : "'输入合法参数'"
+  }, {
+    "name" : "req",
+    "value" : "{'pageNo': 1, 'minPriceE2': '0', 'countryId': 0, 'cityId': 0}"
+  }, {
+    "name" : "res",
+    "value" : "''"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "8500226015cf8a30",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/131/allure/#testresult/8500226015cf8a30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603275305549,
+          "stop" : 1603275305582,
+          "duration" : 33
+        }
+      }, {
+        "uid" : "959bc5b8e630148e",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/130/allure/#testresult/959bc5b8e630148e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603273910753,
+          "stop" : 1603273910787,
+          "duration" : 34
+        }
+      }, {
+        "uid" : "475a5c07bf5328c1",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/125/allure/#testresult/475a5c07bf5328c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601366161829,
+          "stop" : 1601366161859,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "a86c62051e0b5b88",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/124/allure/#testresult/a86c62051e0b5b88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601279237540,
+          "stop" : 1601279238022,
+          "duration" : 482
+        }
+      }, {
+        "uid" : "b59885e196f3e83e",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/121/allure/#testresult/b59885e196f3e83e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601276472388,
+          "stop" : 1601276472418,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "c6dadc206ed20d12",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/118/allure/#testresult/c6dadc206ed20d12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601276050129,
+          "stop" : 1601276050158,
+          "duration" : 29
+        }
+      }, {
+        "uid" : "2b37157f7c94bba0",
+        "reportUrl" : "http://localhost:8080/job/lhjing_api/117/allure/#testresult/2b37157f7c94bba0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601275977052,
+          "stop" : 1601275977188,
+          "duration" : 136
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e9f384f8d5a86ef.json",
+  "parameterValues" : [ "0", "'输入合法参数'", "{'pageNo': 1, 'minPriceE2': '0', 'countryId': 0, 'cityId': 0}", "''" ]
+}

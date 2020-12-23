@@ -1,0 +1,26 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "bb96a784364ab4f3e90b357225398946",
+    "name" : "测试estate",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "f02d8a9ebcaeb8dba9d98682f79464c7",
+    "name" : "天天养鲸",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

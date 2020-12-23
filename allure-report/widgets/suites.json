@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "e15fdb809166adbb354ce04bdb34c950",
+    "name" : "testcases.test_estate",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "bacff7c6573663c2c266e96eee9040cc",
+    "name" : "testcases.test_act",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "4fc39d6f7acce4542823c38c51de2eb8",
+    "name" : "testcases.test_user",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}
