@@ -21,6 +21,7 @@ class Methods:
         except Exception as error:
             log.get_log().error(error)
 
+
     def get(self, path, payload=''):
         try:
             url = self.host + path
@@ -38,17 +39,22 @@ class Methods:
         except Exception as error:
             log.get_log().error(error)
 
-    def post(self, path, payload=''):
-        url = self.host + path
 
-        if payload:
-            r = requests.post(url, payload)
-            log.get_log().info('url:' + str(url) + ', request:' + str(payload) + ', response：' + str(r.json()))
-            return r
-        else:
-            r = requests.post(url, payload)
-            log.get_log().info('url:' + str(url) + ', request:' + str(payload) + ', response：' + str(r.json()))
-            return r
+    def post(self, path, payload=''):
+        try:
+            url = self.host + path
+
+            if payload:
+                r = requests.post(url, payload)
+                log.get_log().info('url:' + str(url) + ', request:' + str(payload) + ', response：' + str(r.json()))
+                return r
+            else:
+                r = requests.post(url, payload)
+                log.get_log().info('url:' + str(url) + ', request:' + str(payload) + ', response：' + str(r.json()))
+                return r
+
+        except Exception as error:
+            log.get_log().error(error)
 
 
 
