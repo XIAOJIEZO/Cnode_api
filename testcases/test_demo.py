@@ -25,10 +25,8 @@ def topics():
 
 def test_new_topics(login):
     r = new_topics(login)
-    print(r.json())
     assert r.status_code == 200
 
 def test_topics():
     r = topics()
-    print(r.json())
     assert 0
