@@ -44,3 +44,13 @@
 - @pytest.mark.xfail()
 - 测试结果：x（XFAIL），预期失败，世界也失败；X（XPASS），预期失败，实际运行并没有失败
 - 对于标记为xfail，但实际结果为XPASS的测试，可以在pytest文件中强制指定结果为FAIL，添加配置参数xfail_strict=true。
+
+## fixture作用范围
+- function：函数级别的fixture每个测试函数只需要运行一次
+- class：类级别的fixture每个测试类只需要运行一次
+- module：模块级别的fixture每个模块只需要运行一次
+- session：一次pytest会话只需要运行一次
+
+## 使用usefixtures指定fixture
+- 可以在函数的参数列表指定fixture，也可以用@pytest.mark.usefixtures('fixture1', 'fixture2')测试函数或测试类，使用此标记需要在参数列表中指定一个或多个fixture，这对测试函数来讲意义不大，但非常适合测试类
+- 只有直接在测试方法添加测试参数才能够使用fixture返回值
