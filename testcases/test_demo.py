@@ -31,3 +31,4 @@ def test_new_topics(login):
 def test_topics():
     r = topics()
     print(r.json())
+    assert 0

@@ -1,0 +1,48 @@
+{
+  "get_topics": [
+    [
+      {
+      "page": 1,
+      "tab": "ask",
+      "limit": 5,
+      "mdrender": false
+    }, "合法参数，tab=ask"
+    ],
+    [
+      {
+      "page": 1,
+      "tab": "share",
+      "limit": 5,
+      "mdrender": false
+    }, "合法参数，tab=share"
+    ],
+    [
+      {
+      "page": 1,
+      "tab": "job",
+      "limit": 5,
+      "mdrender": false
+    }, "合法参数，tab=job"
+    ]
+  ],
+
+  "get_topics_abnormal":[
+    [
+      {
+      "page": 1,
+      "tab": "jj",
+      "limit": 5,
+      "mdrender": false
+    }, [], "非法参数，tab不存在"
+    ],
+
+    [
+      {
+      "page": 1,
+      "tab": 77,
+      "limit": 5,
+      "mdrender": false
+    }, [], "非法参数，类型int"
+    ]
+]
+}

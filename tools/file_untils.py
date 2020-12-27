@@ -7,7 +7,8 @@ import configparser
 def parse_json_file(filename, key):
     """读取json文件"""
     try:
-        data = json.load(open(filename, 'r', encoding='utf8'))
+        file = 'data/' + filename
+        data = json.load(open(file, 'r', encoding='utf8'))
         test_data = data[key]
         log.get_log().info('open file：' + filename)
         # log.get_log().info(test_data)
