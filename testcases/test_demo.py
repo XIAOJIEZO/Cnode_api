@@ -8,6 +8,8 @@ get_pwd()
 
 
 from tools import methods
+import pytest
+
 def new_topics(login):
     paylaod = {
         "accesstoken": login,
@@ -30,3 +32,9 @@ def test_new_topics(login):
 def test_topics():
     r = topics()
     assert 0
+
+@pytest.mark.mark1
+def test_params(return_params):
+    a = return_params
+    print(a)
+
