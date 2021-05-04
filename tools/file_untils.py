@@ -4,6 +4,7 @@ import json
 import tools.log_until as log
 import configparser
 
+
 def parse_json_file(filename, key):
     """读取json文件"""
     try:
@@ -16,6 +17,7 @@ def parse_json_file(filename, key):
     except Exception as error:
         log.get_log().error(error)
         return {}
+
 
 def parse_excel_file(filename):
     """读取Excel文件"""
@@ -34,6 +36,7 @@ def parse_excel_file(filename):
     except Exception as error:
         log.get_log().error(error)
 
+
 def parse_api_file(sever, api_name):
     try:
         path = r'confglobal/api.ini'
@@ -43,5 +46,3 @@ def parse_api_file(sever, api_name):
         return api
     except Exception as error:
         log.get_log().error(error)
-
-

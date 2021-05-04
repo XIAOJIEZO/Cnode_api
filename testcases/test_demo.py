@@ -17,7 +17,7 @@ import pytest
 def new_topics(login):
     paylaod = {
         "accesstoken": login,
-        "title": "yj20201224-01",
+        "title": "yj20201224-02",
         "tab": "ask",
         "content": "fhsidhfospfisdjifospdfjisd"
     }
@@ -37,7 +37,7 @@ def test_new_topics(login):
 
 def test_topics():
     r = topics()
-    assert 0
+    assert r.status_code == 200
 
 
 @pytest.mark.mark1

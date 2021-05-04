@@ -2,9 +2,11 @@
 import sys
 import os
 
+
 def get_pwd():
     pwd = os.getcwd()
     return pwd
+
 
 sys.path.append(get_pwd())
 
@@ -21,13 +23,12 @@ class Methods:
         except Exception as error:
             log.get_log().error(error)
 
-
     def get(self, path, payload=''):
         try:
             url = self.host + path
 
             if payload:
-                r = requests.get(url, payload)
+                r = requests.get(url, payload, timeout=1)
                 log.get_log().info('url:' + str(url) + ', request:' + str(payload) + ', response：' + str(r.json()))
                 return r
 
@@ -38,7 +39,6 @@ class Methods:
 
         except Exception as error:
             log.get_log().error(error)
-
 
     def post(self, path, payload=''):
         try:
@@ -55,9 +55,3 @@ class Methods:
 
         except Exception as error:
             log.get_log().error(error)
-
-
-
-
-
-

@@ -3,6 +3,7 @@ import pymysql
 import tools.log_until as log
 import configparser
 
+
 def mysql(sql):
     try:
         config = configparser.ConfigParser()
