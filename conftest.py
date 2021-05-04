@@ -5,7 +5,7 @@ def login():
     """
     登录
     """
-    Token = 'a2c4b869-13ba-4584-85f7-d3f3b6b9c846'
+    Token = 'd9256236-ee7e-42e7-9405-4aaed6c00c70'
     return Token
 
 @pytest.fixture(scope='class')
