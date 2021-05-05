@@ -19,6 +19,7 @@ def topics():
     return r
 
 
+@pytest.mark.skip(reason="当前操作有次数限制，每天7次")
 def test_new_topics(login):
     r = new_topics(login)
     assert r.status_code == 200
@@ -30,10 +31,13 @@ def test_topics():
 
 
 @allure.feature("测试fixture参数化")
-@allure.story("{return_params}"[1])
-@allure.title("{return_params}"[2])
+@allure.story("测试fixture参数化")
+@allure.title("{return_params}")
 @pytest.mark.mark1
 def test_params(return_params):
+    """
+    fixture参数化测试
+    """
     a = return_params
     print(a)
 

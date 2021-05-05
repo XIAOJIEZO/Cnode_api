@@ -59,7 +59,7 @@ def test_skipif():
 # 测试fixture参数化
 def test_FixtureParameterize(return_params):
     params = return_params
-    print("fixture参数化数据：" + params)
+    print("fixture参数化数据：" + str(params))
 
 
 # 测试只运行标记用例
