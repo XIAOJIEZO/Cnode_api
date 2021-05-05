@@ -46,7 +46,10 @@ def test_params(return_params):
     print(a)
 
 
-def test_loginname(login):
+def test_LoginName(login):
+    """
+    test_LoginName
+    """
     payload = {"accesstoken": login}
     r = methods.Methods().get(r'/api/v1/user/alsotang', payload=payload)
     assert r.status_code == 200

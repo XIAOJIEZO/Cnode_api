@@ -10,11 +10,6 @@ def login():
     return Token
 
 
-@pytest.fixture(scope='function')
-def user_fixtures():
-    print('调用成功')
-
-
 # 每个测试函数都运行该fixture
 @pytest.fixture(autouse=True)
 def AnyTime():
@@ -31,6 +26,11 @@ def return_params(request):
 
 
 # fixture作用范围测试
+@pytest.fixture(scope='function')
+def user_fixtures():
+    print('调用成功，每个测试函数运行一次')
+
+
 @pytest.fixture(scope='module')
 def execution():
     print('打开浏览器')
@@ -38,3 +38,11 @@ def execution():
     yield
     print("执行teardown操作")
     print("关闭浏览器")
+
+
+@pytest.fixture(scope='session')
+def session():
+    print('每次会话只执行一次session')
+
+
+
