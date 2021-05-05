@@ -157,3 +157,23 @@ pytest -n 3
   ```
   
 - @pytest.mark.repeat(count):如果要在代码中标记要重复多次的测试，可以使用@pytest.mark.repeat(count)装饰器
+
+
+## 随机执行测试用例(pytest-random-order)
+- random-order
+- random-order-bucket 随机范围，运行pytest --random-order-bucket=选项，其中可以是global,package,module,class,parent,grandparent
+- 模块或类中禁用随机
+```
+# 写在.py文件最上面即可
+pytestmark = pytest.mark.random_order(disabled=True)
+
+def test_number_one():
+    assert True
+
+def test_number_two():
+    assert True
+```
+- --random-order-seed 随机种子：如果由于重新排序测试而发现测试失败，则可能希望能够以相同的失败顺序重新运行测试
+```
+pytest -v --random-order-seed = xxxx
+```
