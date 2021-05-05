@@ -1,6 +1,5 @@
 import sys
 import pytest
-from tools import methods
 
 
 # 指定fixture，无法使用返回值
