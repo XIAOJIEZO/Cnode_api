@@ -30,8 +30,8 @@ def test_topics():
 
 
 @allure.feature("测试fixture参数化")
-@allure.story("{return_params}")
-@allure.title("{return_params}")
+@allure.story("{return_params}"[1])
+@allure.title("{return_params}"[2])
 @pytest.mark.mark1
 def test_params(return_params):
     a = return_params

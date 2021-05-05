@@ -19,7 +19,7 @@ def AnyTime():
 
 
 # fixture参数化
-data = ["param1", "param2"]
+data = [["payload1", "story1", "title1"], ["payload2", "story2", "title2"]]
 
 
 @pytest.fixture(scope='function', params=data)
