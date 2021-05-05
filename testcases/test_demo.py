@@ -1,5 +1,6 @@
 from tools import methods
 import pytest
+import allure
 
 
 def new_topics(login):
@@ -28,6 +29,8 @@ def test_topics():
     assert r.status_code == 200
 
 
+@allure.feature("测试fixture参数化")
+@allure.title("{return_params}")
 @pytest.mark.mark1
 def test_params(return_params):
     a = return_params
