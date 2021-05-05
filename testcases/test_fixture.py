@@ -1,14 +1,4 @@
 import sys
-import os
-
-
-def get_pwd():
-    pwd = os.getcwd()
-    sys.path.append(pwd)
-
-
-get_pwd()
-
 import pytest
 from tools import methods
 

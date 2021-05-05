@@ -1,15 +1,3 @@
-import sys
-import os
-import json
-
-
-def get_pwd():
-    pwd = os.getcwd()
-    sys.path.append(pwd)
-
-
-get_pwd()
-
 from tools import methods
 import pytest
 

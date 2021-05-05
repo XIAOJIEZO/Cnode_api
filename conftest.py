@@ -1,4 +1,6 @@
 import pytest
+import os
+import sys
 
 
 @pytest.fixture(scope='session')
@@ -45,4 +47,7 @@ def session():
     print('每次会话只执行一次session')
 
 
-
+# @pytest.fixture(scope='session')
+# def GetCwd():
+#     cwd = os.getcwd()
+#     sys.path.append(cwd)
