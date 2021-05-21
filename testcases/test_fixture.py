@@ -33,6 +33,9 @@ def test_Scope3(session):
 
 
 def test_ExceptionAssertion():
+    """
+    测试异常断言
+    """
     with pytest.raises(ZeroDivisionError) as excinfo:
         1 / 0
 
@@ -46,17 +49,26 @@ def test_ExceptionAssertion():
 # skip
 @pytest.mark.skip(reason='此功能不完善，需要跳过')
 def test_skip1():
+    """
+    测试skip
+    """
     return
 
 
 # skipif，为True时跳过
 @pytest.mark.skipif(sys.version_info > (3, 6), reason='版本低于3.6跳过')
 def test_skipif():
+    """
+    测试skipif
+    """
     return
 
 
 # 测试fixture参数化
 def test_FixtureParameterize(return_params):
+    """
+    测试室fixture参数化
+    """
     params = return_params
     print("fixture参数化数据：" + str(params))
 
@@ -64,15 +76,24 @@ def test_FixtureParameterize(return_params):
 # 测试只运行标记用例
 @pytest.mark.TestMark1
 def test_mark1():
+    """
+    测试mark
+    """
     print("运行TestMark1")
 
 
 @pytest.mark.TestMark2
 def test_mark2():
+    """
+    测试mark
+    """
     print("运行TestMark2")
 
 
 # 重复执行的用例
 @pytest.mark.repeat(5)
 def test_RepeatExecution():
+    """
+    重复执行的用例
+    """
     return

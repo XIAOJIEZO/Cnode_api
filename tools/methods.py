@@ -1,21 +1,10 @@
 # 封装调用方法
-import sys
-import os
-
-
-def get_pwd():
-    pwd = os.getcwd()
-    return pwd
-
-
-sys.path.append(get_pwd())
-
 import requests
 from tools.host_untils import get_host as host
 from tools import log_until as log
 
 
-class Methods:
+class Methods(object):
 
     def __init__(self):
         try:
@@ -28,7 +17,7 @@ class Methods:
             url = self.host + path
 
             if payload:
-                r = requests.get(url, payload, timeout=1)
+                r = requests.get(url, payload, timeout=5)
                 log.get_log().info('url:' + str(url) + ', request:' + str(payload) + ', response：' + str(r.json()))
                 return r
 
